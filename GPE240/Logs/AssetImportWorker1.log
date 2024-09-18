@@ -15,7 +15,7 @@ C:/Users/blued/OneDrive/Documents/GPE340/GPE240
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-50460
+63462
 Successfully changed project path to: C:/Users/blued/OneDrive/Documents/GPE340/GPE240
 C:/Users/blued/OneDrive/Documents/GPE340/GPE240
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/blued/OneDrive/Documents/GPE340/GPE240
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [56016] Host "[IP] 172.17.1.132 [Port] 0 [Flags] 2 [Guid] 3230969364 [EditorId] 3230969364 [Version] 1048832 [Id] WindowsEditor(7,GAMERTRON-A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [43520] Host "[IP] 172.17.1.132 [Port] 0 [Flags] 2 [Guid] 829793409 [EditorId] 829793409 [Version] 1048832 [Id] WindowsEditor(7,GAMERTRON-A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [56016] Host "[IP] 172.17.1.132 [Port] 0 [Flags] 2 [Guid] 3230969364 [EditorId] 3230969364 [Version] 1048832 [Id] WindowsEditor(7,GAMERTRON-A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [43520] Host "[IP] 172.17.1.132 [Port] 0 [Flags] 2 [Guid] 829793409 [EditorId] 829793409 [Version] 1048832 [Id] WindowsEditor(7,GAMERTRON-A) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 19.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.96 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -61,52 +61,52 @@ Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon(TM) Graphics (ID=0x1681)
-    Vendor:   ATI
-    VRAM:     7801 MB
-    Driver:   31.0.22024.3
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2560)
+    Vendor:   NVIDIA
+    VRAM:     5996 MB
+    Driver:   32.0.15.5612
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56308
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015859 seconds.
-- Loaded All Assemblies, in  0.623 seconds
+Registered in 0.008064 seconds.
+- Loaded All Assemblies, in  0.415 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.553 seconds
-Domain Reload Profiling: 1171ms
-	BeginReloadAssembly (181ms)
+- Finished resetting the current domain, in  0.247 seconds
+Domain Reload Profiling: 660ms
+	BeginReloadAssembly (81ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (70ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (122ms)
-	LoadAllAssembliesAndSetupDomain (211ms)
-		LoadAssemblies (174ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (232ms)
+		LoadAssemblies (77ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (197ms)
-			TypeCache.Refresh (196ms)
-				TypeCache.ScanAssembly (177ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (554ms)
+		AnalyzeDomain (224ms)
+			TypeCache.Refresh (223ms)
+				TypeCache.ScanAssembly (213ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (248ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (441ms)
+		SetupLoadedEditorAssemblies (193ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (15ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (301ms)
-			ProcessInitializeOnLoadMethodAttributes (97ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (128ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,55 +116,55 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\blued\OneDrive\Documents\GPE340\GPE240\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\blued\OneDrive\Documents\GPE340\GPE240\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.307 seconds
-Refreshing native plugins compatible for Editor in 7.00 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.778 seconds
+Refreshing native plugins compatible for Editor in 3.20 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.044 seconds
-Domain Reload Profiling: 2343ms
-	BeginReloadAssembly (208ms)
+- Finished resetting the current domain, in  0.550 seconds
+Domain Reload Profiling: 1325ms
+	BeginReloadAssembly (112ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (54ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (88ms)
-	LoadAllAssembliesAndSetupDomain (924ms)
-		LoadAssemblies (461ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (584ms)
+		LoadAssemblies (369ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (559ms)
-			TypeCache.Refresh (535ms)
-				TypeCache.ScanAssembly (519ms)
-			ScanForSourceGeneratedMonoScriptInfo (19ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (1045ms)
+		AnalyzeDomain (260ms)
+			TypeCache.Refresh (245ms)
+				TypeCache.ScanAssembly (234ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (550ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (806ms)
+		SetupLoadedEditorAssemblies (409ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (100ms)
-			ProcessInitializeOnLoadAttributes (638ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (18ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (316ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (15ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 6.80 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 4.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3543.
-Memory consumption went from 116.9 MB to 116.8 MB.
-Total: 5.082000 ms (FindLiveObjects: 0.484800 ms CreateObjectMapping: 0.209800 ms MarkObjects: 4.202000 ms  DeleteObjects: 0.183600 ms)
+Unloading 3085 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3547.
+Memory consumption went from 117.0 MB to 116.9 MB.
+Total: 4.102300 ms (FindLiveObjects: 0.253500 ms CreateObjectMapping: 0.092700 ms MarkObjects: 3.636700 ms  DeleteObjects: 0.118400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -182,118 +182,77 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1914916.090390 seconds.
-  path: Assets/Animations/Pro Rifle Pack/walk crouching forward left.fbx
-  artifactKey: Guid(45885ed09c3ca1749a0c84bceed5ffa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/walk crouching forward left.fbx using Guid(45885ed09c3ca1749a0c84bceed5ffa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24524022e0fdcae6fcc33eb81a8c94a') in 0.054484 seconds
+  Time since last request: 514923.831878 seconds.
+  path: Assets/Animations/Pro Rifle Pack/sprint backward left.fbx
+  artifactKey: Guid(24555f93462f30348ae2958a3fa434cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Pro Rifle Pack/sprint backward left.fbx using Guid(24555f93462f30348ae2958a3fa434cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44df4fb24c826627153176272530064c') in 0.032848 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 135
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Animations/Pro Rifle Pack/walk backward right.fbx
-  artifactKey: Guid(71068bf8242e3244dbea3f8b2b3b1217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/walk backward right.fbx using Guid(71068bf8242e3244dbea3f8b2b3b1217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e840cf31f320a9db642fa48f1f6da2a5') in 0.008833 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Animations/Pro Rifle Pack/sprint left.fbx
-  artifactKey: Guid(95b4dc02a9607af409c62cc365e72dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/sprint left.fbx using Guid(95b4dc02a9607af409c62cc365e72dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731f257fc29d68016b82b0586cf67c63') in 0.008704 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Animations/Pro Rifle Pack/death from the front.fbx
-  artifactKey: Guid(02ff945343807c5479fa0b0d5959c630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/death from the front.fbx using Guid(02ff945343807c5479fa0b0d5959c630) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd431da56b80218ab0984bb5743d61c27') in 0.008832 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Animations/Pro Rifle Pack/run right.fbx
-  artifactKey: Guid(5d5e18c1e36ff6a46b65cb91172c5b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/run right.fbx using Guid(5d5e18c1e36ff6a46b65cb91172c5b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e415d9439cd5834a8bcb4ff59a5ab51a') in 0.009183 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Animations/Pro Rifle Pack/idle crouching.fbx
-  artifactKey: Guid(1a6c8eeeb2c1c144390d5165ff5cc7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/idle crouching.fbx using Guid(1a6c8eeeb2c1c144390d5165ff5cc7b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef3c6b3daddc4c98435f6d8bd7cd0da') in 0.010527 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Animations/Pro Rifle Pack/sprint backward.fbx
-  artifactKey: Guid(b88f8d040746bc14295dd46b0fed83ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/sprint backward.fbx using Guid(b88f8d040746bc14295dd46b0fed83ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbfbf03497ca2bc338a37f87f9973532') in 0.010841 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Animations/Pro Rifle Pack/run left.fbx
-  artifactKey: Guid(059fba62c9c71c648a3481f46fd8fe07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/run left.fbx using Guid(059fba62c9c71c648a3481f46fd8fe07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fe632278ed800fa28e4128cf4f8d835') in 0.008848 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Animations/Pro Rifle Pack/run backward left.fbx
-  artifactKey: Guid(2d8401a1ef9f3c94ab870c9a28a0ea55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/run backward left.fbx using Guid(2d8401a1ef9f3c94ab870c9a28a0ea55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9165ebf7591287d6a9e03789a6793c45') in 0.008865 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Animations/Pro Rifle Pack/walk left.fbx
-  artifactKey: Guid(8f4f70533b6abbf45aae9d9bf6d1adf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/walk left.fbx using Guid(8f4f70533b6abbf45aae9d9bf6d1adf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bdf2c343efbc5443c888c481ef5c847') in 0.013134 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Animations/Pro Rifle Pack/death from right.fbx
-  artifactKey: Guid(5d9eae4d4be9c8640ad43d1dda7cdb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/death from right.fbx using Guid(5d9eae4d4be9c8640ad43d1dda7cdb85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb4388ca8913db82dec84c6a37daf82') in 0.012978 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Animations/Pro Rifle Pack/death from front headshot.fbx
-  artifactKey: Guid(d8de50dc97a322140912b33931169a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/death from front headshot.fbx using Guid(d8de50dc97a322140912b33931169a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c255524c17f28d9cfb8b66a84442ea6b') in 0.010695 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Animations/Pro Rifle Pack/idle crouching aiming.fbx
-  artifactKey: Guid(8bdf44feb78f519468a7334a83f6563c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/idle crouching aiming.fbx using Guid(8bdf44feb78f519468a7334a83f6563c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ef235be38596281b972e67acb331716') in 0.008494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Animations/Pro Rifle Pack/jump down.fbx
-  artifactKey: Guid(aac05d41463319045903aec0b7fb2de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Pro Rifle Pack/jump down.fbx using Guid(aac05d41463319045903aec0b7fb2de4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6dfd50440ed7343b49d8053dccf9fca') in 0.009079 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 135
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\blued\OneDrive\Documents\GPE340\GPE240\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\blued\OneDrive\Documents\GPE340\GPE240\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.651 seconds
+Refreshing native plugins compatible for Editor in 5.03 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.973 seconds
+Domain Reload Profiling: 1621ms
+	BeginReloadAssembly (138ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (38ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (421ms)
+		LoadAssemblies (263ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (216ms)
+			TypeCache.Refresh (213ms)
+				TypeCache.ScanAssembly (203ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (973ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (416ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (314ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 3.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3077 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3551.
+Memory consumption went from 115.8 MB to 115.8 MB.
+Total: 3.422900 ms (FindLiveObjects: 0.337400 ms CreateObjectMapping: 0.171800 ms MarkObjects: 2.847900 ms  DeleteObjects: 0.064300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
