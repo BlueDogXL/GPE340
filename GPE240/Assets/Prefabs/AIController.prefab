@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8747141050147193003}
   - component: {fileID: 6668147609773460023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AIController
   m_TagString: Untagged
   m_Icon: {fileID: 0}

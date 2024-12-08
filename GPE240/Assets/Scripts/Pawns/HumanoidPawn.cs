@@ -6,6 +6,7 @@ public class HumanoidPawn : Pawn
 {
     private Animator animator;
     public Transform weaponAttachmentPoint;
+    public ParticleSystem particles;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +41,7 @@ public class HumanoidPawn : Pawn
     {
         UnequipWeapon();
         weapon = Instantiate(weaponToEquip, weaponAttachmentPoint) as Weapon;
+        weapon.gameObject.layer = this.gameObject.layer;
     }
     public override void UnequipWeapon()
     {

@@ -45,19 +45,32 @@ public class PlayerController : Controller
         }
         if (Input.GetButtonDown("Fire1"))
         {
-            pawn.weapon.OnPrimaryAttackBegin.Invoke();
+            Debug.Log("Fire button pressed!");
+            if (pawn.weapon != null)
+            {
+                pawn.weapon.OnPrimaryAttackBegin.Invoke();
+            }
         }
         if (Input.GetButtonUp("Fire1"))
         {
-            pawn.weapon.OnPrimaryAttackEnd.Invoke();
+            if (pawn.weapon != null)
+            {
+                pawn.weapon.OnPrimaryAttackEnd.Invoke();
+            }
         }
         if (Input.GetButtonDown("Fire2"))
         {
-            pawn.weapon.OnSecondaryAttackBegin.Invoke();
+            if (pawn.weapon != null)
+            {
+                pawn.weapon.OnSecondaryAttackBegin.Invoke();
+            }
         }
         if (Input.GetButtonUp("Fire2"))
         {
-            pawn.weapon.OnSecondaryAttackEnd.Invoke();
+            if (pawn.weapon != null)
+            {
+                pawn.weapon.OnSecondaryAttackEnd.Invoke();
+            }
         }
     }
 }

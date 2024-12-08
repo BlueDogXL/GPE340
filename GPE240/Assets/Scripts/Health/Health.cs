@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     [Header("Health Values")]
     public float currentHealth;
     public float maxHealth;
+    private bool isDead;
     [SerializeField]
     private float initialHealth;
     [Header("Events")]
@@ -18,6 +19,7 @@ public class Health : MonoBehaviour
     public void Start()
     {
         currentHealth = initialHealth;
+        isDead = false;
     }
     public void TakeDamage(float damage)
     {
@@ -44,7 +46,11 @@ public class Health : MonoBehaviour
     public void Die()
     {
         currentHealth = 0;
-        OnDeath.Invoke();
+        if (isDead != true)
+        {
+            OnDeath.Invoke();
+        }
+        isDead = true;
     }
 
     public float HealthPercent()

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5685460494044885458}
   - component: {fileID: 8949740254036340373}
+  - component: {fileID: -8463583508190471788}
   m_Layer: 0
   m_Name: Laser Beam
   m_TagString: Untagged
@@ -53,7 +54,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e6948a57f97bc264fb93b42b413b9760, type: 2}
+  - {fileID: 2100000, guid: 11065cd0657ddc04392986ea0e082dc4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -136,3 +137,20 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &-8463583508190471788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4504094052578845663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96db62baac00e234a9f8b85fcc363c91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPoint: {x: 0, y: 0, z: 0}
+  endPoint: {x: 0, y: 0, z: 0}
+  color: {r: 1, g: 1, b: 1, a: 0}
+  lifespan: 0.5
+  width: 0.1
