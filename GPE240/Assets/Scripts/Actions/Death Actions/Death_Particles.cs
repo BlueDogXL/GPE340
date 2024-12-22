@@ -11,14 +11,17 @@ public class Death_Particles : GameAction
     // Start is called before the first frame update
     public override void Start()
     {
+        // get our health component
         Health health = GetComponent<Health>();
+        // get our particle system
         particles = GetComponent<ParticleSystem>();
+        // add our function to the OnDeath event
         health.OnDeath.AddListener(DeployParticles);
     }
 
-    // Update is called once per frame
     public void DeployParticles()
     {
+        // play our particles
         particles.Play();
     }
 }

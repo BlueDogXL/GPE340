@@ -45,4 +45,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pawn: {fileID: 0}
+  accuracy: 0
   isMouseRotation: 0
+  lives: 3

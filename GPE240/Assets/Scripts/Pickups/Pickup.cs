@@ -11,15 +11,20 @@ public class Pickup : MonoBehaviour
 
     public void Awake()
     {
+        // get our collider
         colliderComponent = GetComponent<Collider>();
+        // make sure it's a trigger
         colliderComponent.isTrigger = true;
     }
 
     public virtual void OnTriggerEnter(Collider other)
     {
+        // if we have a collider
         if (colliderComponent != null)
         {
+            // destroy ourselves
             Destroy(gameObject);
+            // invoke the pickup event
             OnPickup.Invoke();
         }
     }

@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 public class PlayerController : Controller
 {
     public bool isMouseRotation;
+    public int lives;
+
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -20,56 +22,86 @@ public class PlayerController : Controller
 
     protected override void MakeDecisions()
     {
-        Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-        moveVector = Vector3.ClampMagnitude(moveVector, 1);
-        pawn.Move(moveVector);
-        if (isMouseRotation)
+        // if we don't have a pawn
+        if (pawn == null)
         {
-            Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Plane footPlane = new Plane(Vector3.up, pawn.transform.position);
-            float distanceToIntersect;
-
-            if (footPlane.Raycast(mouseRay, out distanceToIntersect))
-            {
-                Vector3 intersectPoint = mouseRay.GetPoint(distanceToIntersect);
-                pawn.RotateToLookAt(intersectPoint);
-            }
-            else
-            {
-                Debug.Log("No intersection between plane and ray!");
-            }
+            // there's nothing to be done
+            return;
         }
         else
         {
-            pawn.Rotate(Input.GetAxis("CameraRotation"));
-        }
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Debug.Log("Fire button pressed!");
-            if (pawn.weapon != null)
+            // get our direction from our inputs
+            Vector3 moveVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            // clamp it to make it not ridiculous
+            moveVector = Vector3.ClampMagnitude(moveVector, 1);
+            // send it to our pawn to move that way
+            pawn.Move(moveVector);
+            // if we're using mouse rotation
+            if (isMouseRotation)
             {
-                pawn.weapon.OnPrimaryAttackBegin.Invoke();
+                // send a ray from our mouse pointer
+                Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+                // put a plane under our pawn
+                Plane footPlane = new Plane(Vector3.up, pawn.transform.position);
+                // variable for later
+                float distanceToIntersect;
+                // if we hit, put the distance into the float
+                if (footPlane.Raycast(mouseRay, out distanceToIntersect))
+                {
+                    // get the point we intersect at
+                    Vector3 intersectPoint = mouseRay.GetPoint(distanceToIntersect);
+                    // tell our pawn to look there
+                    pawn.RotateToLookAt(intersectPoint);
+                }
+                else
+                {
+                    // ideally this should never happen but like what if
+                    Debug.Log("No intersection between plane and ray!");
+                }
             }
-        }
-        if (Input.GetButtonUp("Fire1"))
-        {
-            if (pawn.weapon != null)
+            else
             {
-                pawn.weapon.OnPrimaryAttackEnd.Invoke();
+                // otherwise just rotate based on the camera rotation axis
+                pawn.Rotate(Input.GetAxis("CameraRotation"));
             }
-        }
-        if (Input.GetButtonDown("Fire2"))
-        {
-            if (pawn.weapon != null)
+            // if fire button is pressed
+            if (Input.GetButtonDown("Fire1"))
             {
-                pawn.weapon.OnSecondaryAttackBegin.Invoke();
+                Debug.Log("Fire button pressed!");
+                // if we have a weapon
+                if (pawn.weapon != null)
+                {
+                    // begin the attack
+                    pawn.weapon.OnPrimaryAttackBegin.Invoke();
+                }
             }
-        }
-        if (Input.GetButtonUp("Fire2"))
-        {
-            if (pawn.weapon != null)
+            if (Input.GetButtonUp("Fire1"))
             {
-                pawn.weapon.OnSecondaryAttackEnd.Invoke();
+                // if we have a weapon
+                if (pawn.weapon != null)
+                {
+                    // halt the attack
+                    pawn.weapon.OnPrimaryAttackEnd.Invoke();
+                }
+            }
+            if (Input.GetButtonDown("Fire2"))
+            {
+                Debug.Log("Alt fire button pressed!");
+                // if we have a weapon
+                if (pawn.weapon != null)
+                {
+                    // begin the attack
+                    pawn.weapon.OnSecondaryAttackBegin.Invoke();
+                }
+            }
+            if (Input.GetButtonUp("Fire2"))
+            {
+                // if we have a weapon
+                if (pawn.weapon != null)
+                {
+                    // halt the attack
+                    pawn.weapon.OnSecondaryAttackEnd.Invoke();
+                }
             }
         }
     }

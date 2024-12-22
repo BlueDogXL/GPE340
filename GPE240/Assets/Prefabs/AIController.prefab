@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pawn: {fileID: 0}
+  accuracy: 1
   agent: {fileID: 0}
-  stoppingDistance: 0
+  stoppingDistance: 5
+  shootingDistance: 20
+  shootingAngle: 10
   targetTransform: {fileID: 0}

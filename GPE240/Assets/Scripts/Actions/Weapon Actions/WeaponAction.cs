@@ -10,6 +10,7 @@ public class WeaponAction : GameAction
 
     public override void Awake()
     {
+        // get the weapon doing our actions
         weapon = GetComponent<Weapon>();
         base.Awake();
     }

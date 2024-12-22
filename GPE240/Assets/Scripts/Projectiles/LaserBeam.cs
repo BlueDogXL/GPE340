@@ -13,13 +13,19 @@ public class LaserBeam : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        // get our line renderer
         lineRenderer = GetComponent<LineRenderer>();
+        // set our color
         lineRenderer.startColor = color;
         lineRenderer.endColor = color;
+        // set our width
         lineRenderer.startWidth = width;
         lineRenderer.endWidth = width;
+        // get our points
         Vector3[] points = { startPoint, endPoint };
+        // set our points (aka fire)
         lineRenderer.SetPositions(points);
+        // leave after the shot's over
         Destroy(gameObject, lifespan);
     }
 

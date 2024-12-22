@@ -367,6 +367,7 @@
 "Assets/Scripts/Controllers/AIController.cs"
 "Assets/Scripts/Controllers/Controller.cs"
 "Assets/Scripts/Controllers/PlayerController.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/Health/Health.cs"
 "Assets/Scripts/Pawns/HumanoidPawn.cs"
 "Assets/Scripts/Pawns/Pawn.cs"
@@ -374,6 +375,8 @@
 "Assets/Scripts/Pickups/Weapon Pickups/WeaponPickup.cs"
 "Assets/Scripts/Projectiles/LaserBeam.cs"
 "Assets/Scripts/Projectiles/Rocket.cs"
+"Assets/Scripts/SpawnPoint.cs"
+"Assets/Scripts/WaveData.cs"
 "Assets/Scripts/Weapons/Weapon.cs"
 -langversion:9.0
 

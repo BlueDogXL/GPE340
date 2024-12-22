@@ -11,7 +11,9 @@ public class Death_Destroy : GameAction
     // Start is called before the first frame update
     public override void Start()
     {
+        // get the health component
         Health health = GetComponent<Health>();
+        // add our function to the OnDeath event
         health.OnDeath.AddListener(DestroyOnDeath);
     }
 
@@ -22,7 +24,9 @@ public class Death_Destroy : GameAction
     }
     public void DestroyOnDeath()
     {
+        // print this object's obituary in the papers
         Debug.Log(gameObject.name + " is dead!");
+        // destroy this object
         Destroy(gameObject, deathDelay);
     }
 }

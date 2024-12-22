@@ -8,11 +8,17 @@ public abstract class Pawn : MonoBehaviour
     public float maxMoveSpeed;
     public float maxRotationSpeed;
     public Weapon weapon;
+    public Weapon[] startingWeaponOptions;
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void Start()
     {
-        
+        // if we have starting weapons to choose from
+        if (startingWeaponOptions.Length > 0)
+        {
+            // pick a random one and equip it
+            EquipWeapon(startingWeaponOptions[Random.Range(0, startingWeaponOptions.Length)]);
+        }
     }
 
     // Update is called once per frame
